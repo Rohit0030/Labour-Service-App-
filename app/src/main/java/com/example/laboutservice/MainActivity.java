@@ -1,4 +1,4 @@
-﻿package com.example.laboutservice;
+package com.example.laboutservice;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -68,7 +68,7 @@ public class MainActivity extends AppCompatActivity {
             public void onPageSelected(int position) {
                 super.onPageSelected(position);
                 sliderHandler.removeCallbacks(sliderRunnable);
-                sliderHandler.postDelayed(sliderRunnable,2000);
+                sliderHandler.postDelayed(sliderRunnable,4000);
             }
         });
     }
@@ -89,6 +89,6 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onResume() {
         super.onResume();
-        sliderHandler.postDelayed(sliderRunnable,3000);
+        sliderHandler.postDelayed(sliderRunnable,4000);
     }
 }

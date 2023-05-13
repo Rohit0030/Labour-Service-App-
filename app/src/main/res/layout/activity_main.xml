@@ -44,12 +44,64 @@
         android:layout_height="30dp"
         android:layout_marginTop="20dp"
         android:text="Services"
+        android:textColor="@color/black"
         android:textAlignment="center"
         android:textSize="20dp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/viewPager" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button2"
+                style="@android:style/Widget.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="270dp"
+                android:layout_weight="1"
+                android:background="@drawable/main_button_background"
+                android:drawableStart="@drawable/plumber"
+                android:drawablePadding="1dp"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:text="Plumber"
+                android:textColor="#00559f"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:layout_marginLeft="10dp"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button"
+                style="@android:style/Widget.Button"
+                android:drawableStart="@drawable/paint2"
+                android:drawablePadding="1dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="270dp"
+                android:layout_weight="1"
+                android:background="@drawable/main_button_background"
+                android:text="Painter"
+                android:textColor="#00559f"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"/>
+
+
+        </LinearLayout>
+    </LinearLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

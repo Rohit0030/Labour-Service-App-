@@ -55,18 +55,24 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:paddingStart="3dp"
+        android:paddingEnd="3dp"
+        android:paddingTop="1dp"
+        android:paddingBottom="16dp"
         android:orientation="vertical">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal">
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="8dp">
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/button2"
                 style="@android:style/Widget.Button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
                 android:layout_marginTop="270dp"
                 android:layout_weight="1"
                 android:background="@drawable/main_button_background"
@@ -75,32 +81,83 @@
                 android:paddingStart="16dp"
                 android:paddingEnd="16dp"
                 android:text="Plumber"
+                android:textAlignment="center"
                 android:textColor="#00559f"
                 android:textSize="16dp"
-                android:textStyle="bold"
-                android:layout_marginLeft="10dp"/>
+                android:textStyle="bold" />
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/button"
                 style="@android:style/Widget.Button"
-                android:drawableStart="@drawable/paint2"
-                android:drawablePadding="1dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
                 android:layout_marginTop="270dp"
+                android:layout_marginRight="10dp"
                 android:layout_weight="1"
                 android:background="@drawable/main_button_background"
-                android:text="Painter"
-                android:textColor="#00559f"
-                android:textStyle="bold"
-                android:textSize="16dp"
+                android:drawableStart="@drawable/paint2"
+                android:drawablePadding="1dp"
                 android:paddingStart="16dp"
                 android:paddingEnd="16dp"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"/>
+                android:text="Painter"
+                android:textAlignment="center"
+                android:textColor="#00559f"
+                android:textSize="16dp"
+                android:textStyle="bold" />
 
 
         </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="402dp"
+            android:orientation="horizontal"
+            android:paddingBottom="8dp">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button3"
+                style="@android:style/Widget.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/main_button_background"
+                android:drawableStart="@drawable/weightlifting"
+                android:drawablePadding="1dp"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:text="Weight Lifter"
+                android:textAlignment="center"
+                android:textColor="#00559f"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button4"
+                style="@android:style/Widget.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/main_button_background"
+                android:drawableStart="@drawable/gardening"
+                android:drawablePadding="1dp"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:text="Gardening"
+                android:textAlignment="center"
+                android:textColor="#00559f"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
     </LinearLayout>
 
 

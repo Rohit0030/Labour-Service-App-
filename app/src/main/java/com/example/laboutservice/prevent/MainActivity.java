@@ -1,4 +1,4 @@
-package com.example.laboutservice;
+package com.example.laboutservice.prevent;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -11,8 +11,11 @@ import android.app.ActivityManager;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.Button;
 
+import com.example.laboutservice.R;
 import com.example.laboutservice.model.SliderIten;
 import com.example.laboutservice.prevent.SlideAdapter;
 
@@ -31,7 +34,11 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        requestWindowFeature(Window.FEATURE_NO_TITLE);
+        this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
+        getSupportActionBar().hide();
         setContentView(R.layout.activity_main);
+
 
         viewPager2=findViewById(R.id.viewPager);
 
